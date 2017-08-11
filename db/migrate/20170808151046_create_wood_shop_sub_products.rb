@@ -4,6 +4,7 @@ class CreateWoodShopSubProducts < ActiveRecord::Migration[5.1]
       t.boolean :exist
       t.integer :product_id
       t.integer :brand_id
+      t.integer :vendor_id
       t.integer :price
       t.string :name
       t.text :text
