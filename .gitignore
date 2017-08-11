@@ -1,0 +1,28 @@
+pkg/
+test/dummy/db/*.sqlite3
+test/dummy/db/*.sqlite3-journal
+test/dummy/log/*.log
+test/dummy/tmp/
+
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+
+#
+/config/database.yml
+/.idea
+/.byebug_history
+*.DS_Store
+/doc
+/public
+/config/puma.rb
+/shared
+/vendor/assets
+/Gemfile.lock
