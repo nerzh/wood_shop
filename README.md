@@ -1,8 +1,8 @@
 # WoodShop
-Short description and motivation.
+Engine without best practices.
 
 ## Usage
-How to use my plugin.
+How to use my plugin - NOHOW !
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -14,11 +14,7 @@ gem 'wood_shop'
 And then execute:
 ```bash
 $ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install wood_shop
+$ rails db:migrate
 ```
 
 ## Contributing
