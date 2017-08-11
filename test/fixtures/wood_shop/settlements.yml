@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area_id: 1
+  description: MyString
+  description_ru: MyString
+  settlement_type_descr: MyString
+  settlement_type_descr_ru: MyString
+  region: MyString
+  regions_descr: MyString
+  regions_descr_ru: MyString
+  ref_area: MyString
+  area_descr: MyString
+  area_descr_ru: MyString
+
+two:
+  area_id: 1
+  description: MyString
+  description_ru: MyString
+  settlement_type_descr: MyString
+  settlement_type_descr_ru: MyString
+  region: MyString
+  regions_descr: MyString
+  regions_descr_ru: MyString
+  ref_area: MyString
+  area_descr: MyString
+  area_descr_ru: MyString

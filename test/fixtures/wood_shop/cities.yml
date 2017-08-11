@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area_id: 1
+  description: MyString
+  description_ru: MyString
+  ref: MyString
+  delivery1: false
+  delivery2: false
+  delivery3: false
+  delivery4: false
+  delivery5: false
+  delivery6: false
+  delivery7: false
+
+two:
+  area_id: 1
+  description: MyString
+  description_ru: MyString
+  ref: MyString
+  delivery1: false
+  delivery2: false
+  delivery3: false
+  delivery4: false
+  delivery5: false
+  delivery6: false
+  delivery7: false

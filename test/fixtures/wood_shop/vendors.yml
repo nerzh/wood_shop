@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  file: MyString
+  formula: MyString
+  order: 1
+  col_sku: 1
+  col_name: 1
+  col_price: 1
+  replace_if: MyString
+
+two:
+  name: MyString
+  file: MyString
+  formula: MyString
+  order: 1
+  col_sku: 1
+  col_name: 1
+  col_price: 1
+  replace_if: MyString

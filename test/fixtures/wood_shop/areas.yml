@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  description_ru: MyString
+  ref: MyString
+  city_center: MyString
+
+two:
+  description: MyString
+  description_ru: MyString
+  ref: MyString
+  city_center: MyString
