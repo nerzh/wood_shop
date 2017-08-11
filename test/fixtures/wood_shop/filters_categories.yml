@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category_id: 1
+  filter_id: 1
+  filter_name: MyString
+  numeric: false
+  order: 1
+  filter_value_id: 1
+
+two:
+  category_id: 1
+  filter_id: 1
+  filter_name: MyString
+  numeric: false
+  order: 1
+  filter_value_id: 1

@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exist: false
+  shop_id: 1
+  catalog_id: 1
+  category_id: 1
+  group_id: 1
+  product_id: 1
+  brand_id: 1
+  price: 1
+  name: MyString
+  text: MyText
+  small_text: MyString
+  url: MyString
+  slug: MyString
+  title: MyString
+  description: MyString
+  keywords: MyString
+
+two:
+  exist: false
+  shop_id: 1
+  catalog_id: 1
+  category_id: 1
+  group_id: 1
+  product_id: 1
+  brand_id: 1
+  price: 1
+  name: MyString
+  text: MyText
+  small_text: MyString
+  url: MyString
+  slug: MyString
+  title: MyString
+  description: MyString
+  keywords: MyString
