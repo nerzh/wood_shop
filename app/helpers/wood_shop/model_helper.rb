@@ -1,9 +1,13 @@
 module WoodShop
   module ModelHelper
-    def update_filters
-      self.filterids       = self.filters.pluck(:id)
-      self.filter_valueids = self.filter_values.pluck(:id)
-      self.save
+    # FriendlyId
+    def should_generate_new_friendly_id?
+      slug.blank? or url_changed?
     end
+
+    def normalize_friendly_id(text)
+      text.to_slug.normalize(transliterations: [:russian, :ukrainian]).to_s
+    end
+    # FriendlyId end
   end
 end

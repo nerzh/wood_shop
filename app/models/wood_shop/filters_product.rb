@@ -8,7 +8,7 @@ module WoodShop
     private
 
     def change_filters_array
-      obj = Product.find(self.product_id)
+      return unless obj = self.product
       obj.update_filters
     end
   end

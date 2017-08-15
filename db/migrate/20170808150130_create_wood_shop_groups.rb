@@ -1,9 +1,6 @@
 class CreateWoodShopGroups < ActiveRecord::Migration[5.1]
   def change
     create_table :wood_shop_groups do |t|
-      t.integer :shop_id
-      t.integer :catalog_id
-      t.integer :category_id
       t.string :name
       t.text :text
       t.string :small_text
