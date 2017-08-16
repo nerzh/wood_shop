@@ -13,5 +13,12 @@ module WoodShop
     # config.to_prepare do
     #   Devise::SessionsController.layout "layout_for_sessions_controller"
     # end
+
+    initializer :action_controller do
+      ActiveSupport.on_load(:action_controller) do
+        include MainappApplicationControllerExtension
+        helper WoodShop::Engine.helpers
+      end
+    end
   end
 end
