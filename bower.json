@@ -1,0 +1,24 @@
+{
+  "lib": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+    }
+  },
+  "vendor": {
+    "name": "bower-rails generated vendor assets",
+    "dependencies": {
+      "angular": "latest",
+      "underscore": "latest",
+      "angular-route": "latest",
+      "angular-resource": "latest",
+      "angular-cookies": "latest",
+      "angular-animate": "latest",
+      "jquery-ui": "latest",
+      "jquery-ui-touch-punch-working": "latest",
+      "angularjs-slider": "latest",
+      "angular-devise": "latest",
+      "swiper": "latest",
+      "ngprogress": "latest"
+    }
+  }
+}

@@ -5,6 +5,7 @@ require 'friendly_id'
 require 'wood_shop/my_route_app'
 require 'babosa'
 require 'activerecord-import'
+require 'bower-rails'
 
 module WoodShop
   # Your code goes here...

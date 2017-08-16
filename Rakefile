@@ -16,7 +16,8 @@ end
 
 APP_RAKEFILE = File.expand_path("../test/dummy/Rakefile", __FILE__)
 load 'rails/tasks/engine.rake'
-
+spec = Gem::Specification.find_by_name 'bower-rails'
+load "#{spec.gem_dir}/lib/tasks/bower.rake"
 
 load 'rails/tasks/statistics.rake'
 
@@ -25,6 +26,8 @@ load 'rails/tasks/statistics.rake'
 require 'bundler/gem_tasks'
 
 require 'rake/testtask'
+
+
 
 Rake::TestTask.new(:test) do |t|
   t.libs << 'test'
