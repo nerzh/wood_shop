@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'activeadmin',              '~> 1.1.0'
   s.add_dependency 'jquery-ui-sass-rails',     '~> 4.0.3.0'
   s.add_dependency 'unicode',                  '~> 0.4.4.4'
+  s.add_dependency 'versionist',               '~> 1.6.0'
   #Base
   s.add_dependency "activerecord-import",      '~> 0.19.1'
   s.add_dependency 'friendly_id',              '~> 5.2.1'
