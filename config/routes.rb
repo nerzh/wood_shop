@@ -7,26 +7,11 @@ WoodShop::Engine.routes.draw do
 
   scope :api do
     api_version(module: "Api::v1", path: {:value => "v1"}, default: true) do
-      # resources :agencies,            only: [:index, :show, :create]
-      # resources :agency_services,     only: [:show]
-      # resources :user_files,          only: [:index, :create, :delete]
-      # resources :user_step_chains,    only: [:index, :update]
-      # resources :vacancies,           only: [:index, :create]
-      # resources :ovirs,               only: [:index, :create]
-      # resources :banks,               only: [:index, :create]
-      # resources :cities,              only: [:index, :show]
-      # resources :areas,               only: [:index, :show]
-      # resources :chains,              only: [:index]
-      # resources :billings,            only: [:index, :create, :update]
-      # resources :promo_codes,         only: [:index, :update]
-      # resources :category_vacancies,  only: [:index]
-      # resources :specialty_vacancies, only: [:index]
-      #
-      # get 'promo_codes/check_promo_code', to: 'promo_codes#check_promo_code'
+
     end
   end
 
-
+  root to: 'index#index'
 
   resources :catalogs,   only: [:show]
   resources :categories, only: [:index, :show]

@@ -1,11 +1,17 @@
 require "wood_shop/engine"
-require 'devise'
-require 'active_admin'
-require 'friendly_id'
 require 'wood_shop/my_route_app'
-require 'babosa'
-require 'activerecord-import'
-require 'bower-rails'
+
+def self.self_require(name)
+  begin
+    require name
+  rescue LoadError => ex
+    p ex
+  end
+end
+
+Gem.loaded_specs['wood_shop'].dependencies.each do |d|
+  self_require d.name
+end
 
 module WoodShop
   # Your code goes here...
