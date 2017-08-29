@@ -1,5 +1,5 @@
 class CartController < ApplicationController
-  include CartProcessor
+  # include CartProcessor
 
   def show
     respond_to do |format|
