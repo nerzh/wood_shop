@@ -1,6 +1,7 @@
 class CreateWoodShopProducts < ActiveRecord::Migration[5.1]
   def change
     create_table :wood_shop_products do |t|
+      t.boolean :exist_sub_prod, default: false
       t.boolean :exist, default: false
       t.integer :categoryids, array: true
       t.integer :groupids, array: true

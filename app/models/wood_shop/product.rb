@@ -8,6 +8,7 @@ module WoodShop
     include FiltersHelper
 
     belongs_to :brand, optional: true
+    has_many :base_codes
     has_many :filters_products
     has_many :filter_values, through: :filters_products
     has_many :filters,       through: :filter_values
@@ -16,6 +17,7 @@ module WoodShop
     has_many :groups,     through: :category_products
     has_many :sub_products
     has_many :image_products
+    has_many :images, class_name: 'ImageProduct'
 
     private
 
