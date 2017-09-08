@@ -8,6 +8,8 @@ module WoodShop
 
     has_many :products
     has_many :sub_products
+    has_many :image_brands
+    has_many :images, class_name: 'ImageBrand'
 
     private
 

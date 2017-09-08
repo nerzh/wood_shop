@@ -1,9 +1,11 @@
-class ErrorsController < ApplicationController
-  def not_found
-    render(:status => 404)
-  end
+module WoodShop
+  class ErrorsController < ApplicationController
+    def not_found
+      render(:status => 404)
+    end
 
-  def internal_server_error
-    render(:status => 500)
+    def internal_server_error
+      render(:status => 500)
+    end
   end
 end

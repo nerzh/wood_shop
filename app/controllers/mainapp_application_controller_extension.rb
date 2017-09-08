@@ -8,6 +8,7 @@ module MainappApplicationControllerExtension
     def self.extended(klass)
       klass.class_eval do
         after_action  :set_csrf_cookie_for_ng
+        before_action :menu_catalogs
         respond_to :html, :json
       end
     end
@@ -15,6 +16,12 @@ module MainappApplicationControllerExtension
 
   module InstanceMethods
     protected
+
+    def menu_catalogs
+      @menu_catalogs = WoodShop::Catalog.includes(:categories).select('wood_shop_catalogs.id',
+                                                                      'wood_shop_catalogs.name',
+                                                                      'wood_shop_catalogs.slug')
+    end
 
     def set_csrf_cookie_for_ng
       cookies['XSRF-TOKEN'] = form_authenticity_token if protect_against_forgery?
