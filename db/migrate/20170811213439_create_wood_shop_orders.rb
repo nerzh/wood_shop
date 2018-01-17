@@ -4,10 +4,10 @@ class CreateWoodShopOrders < ActiveRecord::Migration[5.1]
       t.integer :user_id
       t.integer :delivery_id
       t.integer :payment_id
-      t.integer :address_order_id
       t.integer :coupon_id
       t.integer :total_price
       t.string :aasm_state
+      t.string :description
 
       t.timestamps
     end

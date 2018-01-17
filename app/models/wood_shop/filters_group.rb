@@ -3,7 +3,7 @@ module WoodShop
     belongs_to :group
     belongs_to :filter_value
 
-    after_save :change_filters_array
+    after_commit :change_filters_array
 
     private
 

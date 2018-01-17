@@ -1,6 +1,10 @@
 if RUBY_VERSION >= "2.4.0"
   class Integer
     def to_price
+      self.to_dec.ceil
+    end
+
+    def to_dec
       return 0.0 if self == 0
       (self.to_d/1000).round 2
     end
@@ -12,6 +16,10 @@ if RUBY_VERSION >= "2.4.0"
 else
   class Fixnum
     def to_price
+      self.to_dec.ceil
+    end
+
+    def to_dec
       return 0.0 if self == 0
       (self.to_d/1000).round 2
     end
@@ -24,6 +32,10 @@ end
 
 class String
   def to_price
+    self.to_dec.ceil
+  end
+
+  def to_dec
     return 0.0 if self == "0"
     (self.to_d/1000).round 2
   end
@@ -53,6 +65,10 @@ end
 
 class BigDecimal
   def to_price
+    self.to_dec.ceil
+  end
+
+  def to_dec
     return 0.0 if self == 0.0
     (self/1000).round 2
   end
@@ -64,6 +80,10 @@ end
 
 class Float
   def to_price
+    self.to_dec.ceil
+  end
+
+  def to_dec
     return self if self == 0.0
     (self.to_d/1000).round 2
   end

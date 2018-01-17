@@ -12,6 +12,8 @@ class CreateWoodShopAddressOrders < ActiveRecord::Migration[5.1]
       t.timestamp :date_start
       t.timestamp :date_finish
       t.string :email
+      t.string :address
+      t.integer :number_storage
 
       t.timestamps
     end

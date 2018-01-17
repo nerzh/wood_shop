@@ -4,15 +4,16 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Dummy"
-
+  config.site_title = "WOODSHOP"
 
   # Чтоб заработало
-  config.load_paths = [WoodShop::Engine.root.join("app/admin").to_s]
+  config.load_paths  = [WoodShop::Engine.root.join('app','admin').to_s]
+  config.load_paths += [Rails.root.join('app','admin').to_s]
+
   config.default_namespace = :admin
 
   config.namespace :admin do |admin|
-    # ...
+    admin.comments = false
   end
 
   require 'active_admin/helpers/routes/url_helpers'

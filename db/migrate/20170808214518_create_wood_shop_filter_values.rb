@@ -7,5 +7,7 @@ class CreateWoodShopFilterValues < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
+
+    add_index( :wood_shop_filter_values, :filter_id )
   end
 end

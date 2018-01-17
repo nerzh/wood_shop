@@ -1,5 +1,4 @@
 class MyRouteApp
-
   attr_reader :controller
   attr_accessor :http_path_info
 

@@ -5,10 +5,10 @@ class CreateWoodShopVendors < ActiveRecord::Migration[5.1]
       t.string :file
       t.string :formula
       t.integer :order
-      t.integer :col_sku
-      t.integer :col_name
-      t.integer :col_price
-      t.string :replace_if
+      t.string :col_sku, default: 'A'
+      t.string :col_name, default: 'C'
+      t.string :col_price, default: 'D'
+      t.string :replace_if, default: 'if_less'
 
       t.timestamps
     end

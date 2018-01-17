@@ -11,6 +11,7 @@ class CreateWoodShopGroups < ActiveRecord::Migration[5.1]
       t.string :keywords
       t.integer :filterids, array: true
       t.integer :filter_valueids, array: true
+      t.integer :prod_count, default: 0
 
       t.timestamps
     end

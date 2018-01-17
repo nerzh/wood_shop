@@ -8,5 +8,8 @@ class CreateWoodShopFilters < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
+
+    add_index( :wood_shop_filters, :name )
+    add_index( :wood_shop_filters, :numeric )
   end
 end

@@ -19,6 +19,12 @@ And then execute:
 $ bundle
 $ rails db:migrate
 ```
+Add routes helpers
+```ruby
+module ApplicationHelper
+  include WoodShop::Engine.routes.url_helpers
+end
+```
 
 ## Contributing
 Contribution directions go here.

@@ -9,8 +9,7 @@ class CreateWoodShopAddressUsers < ActiveRecord::Migration[5.1]
       t.string :last_name
       t.string :zip
       t.string :phone
-      t.timestamp :date_start
-      t.timestamp :date_finish
+      t.string :address
 
       t.timestamps
     end
