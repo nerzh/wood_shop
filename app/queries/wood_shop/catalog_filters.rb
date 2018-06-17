@@ -82,7 +82,7 @@ module WoodShop
           next if hash['id'].to_i == 0
           valueids = WoodShop::Filter.find(hash['id'].to_i).filter_values.where("wood_shop_filter_values.num_value >= #{hash['min']}
                and wood_shop_filter_values.num_value <= #{hash['max']}").pluck(:id)
-          prods     = prods.where("wood_shop_products.filter_valueids @> ARRAY#{valueids.to_s}")
+          prods    = prods.where("wood_shop_products.filter_valueids @> ARRAY#{valueids.to_s}")
         end
       end
       prods

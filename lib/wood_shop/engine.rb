@@ -26,7 +26,7 @@ module WoodShop
 
     initializer "wood_shop", before: :load_config_initializers do |app|
       Rails.application.routes.append do
-        mount WoodShop::Engine, at: '/'
+        mount WoodShop::Engine, at: '/', as: 'wood_shop'
       end
     end
 
